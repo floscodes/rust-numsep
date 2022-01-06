@@ -3,7 +3,7 @@
 //! ### First of all add teh following
 //! ```
 //! [dependencies]
-//! numsep = "0.1.0"
+//! numsep = "0.1.1"
 //! ```
 //! ### to your Cargo.toml-File.
 //! 
@@ -14,7 +14,7 @@
 //! 
 //! let number = 10000;
 //! 
-//! assert_eq!("10.000", separate(n, Locale::English));
+//! assert_eq!("10,000", separate(n, Locale::English));
 //! 
 //! ```
 //! 
@@ -29,7 +29,7 @@
 //!     Locale::Singapore,
 //! ```
 //! 
-//! ## AND
+//! ## AND a CUSTOM-Scheme...
 //! 
 //! ```
 //!     Locale::Custom(Scheme)
