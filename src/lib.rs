@@ -113,7 +113,7 @@ impl <'a>Scheme<'a> {
 /// assert_eq!("2'000,5", separate(n, Locale::Custom(custom)));
 /// ```
 /// [`Locale`]: enum.Locale.html#
-pub fn separate<T: ToString>(n: T, lang: Locale<Scheme>) -> String {
+pub fn separate(n: impl ToString, lang: Locale<Scheme>) -> String {
 
     let s = n.to_string();
     let (sep, radix) = get_separator(&lang);
