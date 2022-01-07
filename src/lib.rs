@@ -1,9 +1,9 @@
 //! # Adding thousands-seperators to numbers
 //! 
-//! ### First of all add teh following
+//! ### First of all add the following
 //! ```
 //! [dependencies]
-//! numsep = "0.1.1"
+//! numsep = "0.1.12"
 //! ```
 //! ### to your Cargo.toml-File.
 //! 
@@ -72,8 +72,6 @@ pub struct Scheme<'a> {
 
 /// creates a custom-[`Scheme`] that can be customized with [`set_separator`] and [`set_radix`]
 /// [`Scheme`]: struct.Scheme.html#
-/// [`set_separator`]: struct.Scheme.html#method.set_separator
-/// [`set_radix`]: struct.Scheme.html#method.set_radix
 pub fn custom() -> Scheme<'static> {
     let s = Scheme{separator: "", radix: ""};
     s
@@ -100,7 +98,7 @@ impl <'a>Scheme<'a> {
 /// 
 /// let n = separate(2000, Locale::English);
 /// 
-/// assert_eq!("2.000", n);
+/// assert_eq!("2,000", n);
 /// ```
 /// # Example for Customized-Style:
 /// ```

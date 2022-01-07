@@ -1,9 +1,9 @@
 # Adding thousands-seperators to numbers
 
-### First of all add teh following
+### First of all add the following
 ```
 [dependencies]
-numsep = "0.1.1"
+numsep = "0.1.12"
 ```
 ### to your Cargo.toml-File.
 

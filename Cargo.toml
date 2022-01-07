@@ -1,6 +1,6 @@
 [package]
 name = "numsep"
-version = "0.1.1"
+version = "0.1.12"
 edition = "2021"
 author = "flopetautschnig (floscodes)"
 description = "Adding thousands-seperators to numbers"
